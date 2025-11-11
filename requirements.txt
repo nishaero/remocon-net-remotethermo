@@ -1,2 +1,2 @@
-remocon>=0.16.4
+ariston>=0.19.8
 homeassistant>=2025.11.1
