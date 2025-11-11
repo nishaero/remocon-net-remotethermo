@@ -9,8 +9,7 @@
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/nishaero/remocon-net-remotethermo/issues",
   "loggers": ["remocon"],
-  "requirements": ["remocon==0.19.8"],
-  "ssdp": [],
+  "requirements": ["ariston~=0.19.8"],  "ssdp": [],
   "version": "0.19.8",
   "zeroconf": []
 }
