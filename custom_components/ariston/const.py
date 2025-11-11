@@ -1,4 +1,4 @@
-"""Constants for the Ariston integration."""
+"""Constants for the Remocon integration."""
 
 from collections.abc import Callable, Coroutine
 from dataclasses import dataclass
@@ -49,8 +49,8 @@ except ImportError:
 
 import datetime as dt
 
-DOMAIN: Final[str] = "ariston"
-NAME: Final[str] = "Ariston"
+DOMAIN: Final[str] = "remocon"
+NAME: Final[str] = "Remocon"
 COORDINATOR: Final[str] = "coordinator"
 ENERGY_COORDINATOR: Final[str] = "energy_coordinator"
 ENERGY_SCAN_INTERVAL: Final[str] = "energy_scan_interval"
