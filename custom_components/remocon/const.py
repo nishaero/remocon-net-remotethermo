@@ -5,7 +5,7 @@ from dataclasses import dataclass
 import sys
 from typing import Any, Final
 
-from remocon.const import (
+from ariston.const import (
     ARISTON_BUS_ERRORS,
     ConsumptionProperties,
     ConsumptionType,
