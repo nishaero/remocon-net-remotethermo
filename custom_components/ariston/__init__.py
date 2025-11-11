@@ -65,7 +65,8 @@ SET_ITEM_BY_ID_SCHEMA = vol.Schema(
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    """Set up Remocon from a config entry."""    ariston = Ariston()
+    """Set up Remocon from a config entry."""    
+    ariston = Ariston()
     try:
         api_url_setting = entry.data.get(API_URL_SETTING, REMOCON_API_URL)
 
