@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 
-from ariston.const import SystemType
+from remocon.const import SystemType
 from homeassistant.components.water_heater import (
     WaterHeaterEntity,
     WaterHeaterEntityFeature,
