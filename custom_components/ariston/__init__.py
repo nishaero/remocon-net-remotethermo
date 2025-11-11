@@ -1,5 +1,4 @@
-"""The Ariston integration."""
-
+"""The Remocon integration."""
 from __future__ import annotations
 
 import logging
@@ -24,6 +23,7 @@ from homeassistant.util.unit_system import METRIC_SYSTEM
 
 from .const import (
     API_URL_SETTING,
+    REMOCON_API_URL,
     API_USER_AGENT,
     BUS_ERRORS_COORDINATOR,
     BUS_ERRORS_SCAN_INTERVAL,
@@ -65,10 +65,9 @@ SET_ITEM_BY_ID_SCHEMA = vol.Schema(
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    """Set up Ariston from a config entry."""
-    ariston = Ariston()
+    """Set up Remocon from a config entry."""    ariston = Ariston()
     try:
-        api_url_setting = entry.data.get(API_URL_SETTING, ARISTON_API_URL)
+        api_url_setting = entry.data.get(API_URL_SETTING, REMOCON_API_URL)
 
         api_user_agent = entry.data.get(API_USER_AGENT, ARISTON_USER_AGENT)
 
