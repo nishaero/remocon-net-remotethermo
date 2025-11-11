@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 
-from remocon.const import PlantMode, ZoneMode, BsbZoneMode
+from ariston.const import PlantMode, ZoneMode, BsbZoneMode
 from homeassistant.components.climate import (
     ClimateEntity,
     ClimateEntityFeature,
