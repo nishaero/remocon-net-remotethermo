@@ -16,7 +16,7 @@ jobs:
         uses: TheDoctor0/zip-release@0.7.1
         with:
           filename: remocon-net-remotethermo.zip
-          directory: custom_components/ariston
+          directory: custom_components/remocon
       - name: Upload to Release Action
         uses: Shopify/upload-to-release@v1.0.1
         with:
