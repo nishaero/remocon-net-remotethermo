@@ -27,6 +27,7 @@ from .const import (
     DEFAULT_SCAN_INTERVAL_SECONDS,
     DOMAIN,
     ENERGY_SCAN_INTERVAL,
+    REMOCON_API_URL,
 )
 
 _LOGGER = logging.getLogger(__name__)
@@ -35,22 +36,22 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
     {
         vol.Required(CONF_USERNAME): str,
         vol.Required(CONF_PASSWORD): str,
-        vol.Optional(API_URL_SETTING, default=ARISTON_API_URL): str,
+        vol.Optional(API_URL_SETTING, default=REMOCON_API_URL): str,
         vol.Optional(API_USER_AGENT, default=ARISTON_USER_AGENT): str,
     }
 )
 
 
 class AristonConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Ariston Config Flow."""
+    """Remocon Config Flow."""
 
     VERSION = 1
 
     def __init__(self) -> None:
-        """Initialize Ariston config flow."""
+        """Initialize Remocon config flow."""
         self.cloud_username: str = ""
         self.cloud_password: str = ""
-        self.cloud_api_url: str = ARISTON_API_URL
+        self.cloud_api_url: str = REMOCON_API_URL
         self.cloud_api_user_agent: str = ARISTON_USER_AGENT
         self.cloud_devices = {}
 
