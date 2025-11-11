@@ -1,7 +1,7 @@
 {
   "domain": "remocon",
   "name": "Remocon",
-  "codeowners": ["@fustom"],
+  "codeowners": ["@fustom", "@nishaero"],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/nishaero/remocon-net-remotethermo",
