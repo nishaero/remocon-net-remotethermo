@@ -5,7 +5,7 @@ from __future__ import annotations
 from abc import ABC
 import logging
 
-from remocon.const import WheType
+from ariston.const import WheType
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
